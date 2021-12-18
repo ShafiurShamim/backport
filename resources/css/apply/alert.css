@@ -1,0 +1,39 @@
+.notification{
+    max-width: 480px;
+    @apply absolute m-auto top-3 z-50 text-center h-auto left-0 right-0;
+}
+
+.alert{
+    @apply border rounded py-4 px-6 text-sm;
+} 
+.alert a{
+    @apply font-extrabold text-black text-base transition ease-in-out duration-300;
+}
+.alert a:hover{
+    @apply opacity-75;
+}
+
+.alert-success {
+    @apply bg-green-200 border-green-300;
+    color: navy;
+}
+.alert-success  a{
+    @apply text-green-700;
+}
+
+.alert-error{
+    @apply bg-red-200 border-red-300 text-red-500;
+}
+    
+.alert-error a{
+    @apply text-red-700;
+}
+
+.alert-warn{
+    background: #f0ad4e;
+    @apply bg-yellow-200 border-yellow-300;
+} 
+.alert-info{
+    background: #55a9ee;
+    @apply bg-blue-200 border-blue-300;
+} 

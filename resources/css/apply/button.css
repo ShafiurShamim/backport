@@ -1,0 +1,45 @@
+.btn{
+    @apply inline-flex items-center border-none py-2 px-5 tracking-widest transition ease-in-out duration-300 shadow-md font-medium capitalize;
+}
+
+.btn:hover{
+    @apply shadow-lg;
+}
+.btn-sm{
+    @apply font-normal py-1 px-2;
+}
+
+.btn-indigo{
+
+    @apply bg-indigo-500 text-indigo-50;
+}
+.btn-indigo:hover{
+    @apply bg-indigo-600 text-indigo-100;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-blue-50;
+}
+.btn-blue:hover {
+    @apply bg-blue-600 text-blue-100;
+}
+
+.btn-green{
+    @apply bg-green-500 text-green-50;
+}
+.btn-green:hover{
+    @apply bg-green-600 text-green-100;
+}
+.btn-red{
+    @apply bg-red-500 text-red-50;
+}
+.btn-red:hover{
+    @apply bg-red-600 text-red-100;
+}
+
+.btn-gray{
+    @apply bg-gray-800  text-gray-50;
+}
+.btn-gray:hover{
+    @apply  bg-gray-600 text-gray-100;
+}

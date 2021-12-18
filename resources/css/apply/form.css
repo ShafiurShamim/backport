@@ -1,0 +1,21 @@
+.form-input{
+    @apply appearance-none border rounded border-gray-300 py-3 px-4 mb-3 leading-tight;
+}
+@media print {
+    ::-webkit-input-placeholder {
+        color: transparent !important;
+    }
+    :-moz-placeholder {
+        color: transparent !important;
+    }
+    ::-moz-placeholder {
+        color: transparent !important;
+    }
+    :-ms-input-placeholder {
+        color: transparent !important;
+    }
+    ::placeholder{
+        color: transparent !important;
+    }
+}
+
