@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers\Manage;
 
-use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 
-class ManageUserController extends Controller
+class ManageUserController extends ManageController
 {
     /**
      * Display a listing of the resource.
