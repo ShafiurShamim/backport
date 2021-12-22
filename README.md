@@ -1,6 +1,8 @@
 <p style="text-align:center; font-size:2rem;color:#FF2D20;">Backport::Simple Backend Management System <sup style="font-size:1rem;color:#d0d0d0;">beta</sup></p>
 <p align="center">Powered by <a href="https://laravel.com">Laravel</a></p>
 
+ ![GitHub](https://img.shields.io/github/license/shafiurshamim/backport?style=plastic)
+ 
 To run locally:
 
 #. Clone the git repository::
