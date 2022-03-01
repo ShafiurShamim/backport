@@ -8,12 +8,14 @@ trait DBManager
 {
     public function getConnection()
     {
-        return DriverManager::getConnection(config('database.connections.pdo_mysql'));
+        $conn = DriverManager::getConnection(config('database.connections.pdo_mysql'));
+        $conn->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
+        return $conn;
     }
 
     public function getSchemaManager()
     {
-        return $this->getConnection()->getSchemaManager();
+        return $this->getConnection()->createSchemaManager();
     }
 
     public function listTables()
