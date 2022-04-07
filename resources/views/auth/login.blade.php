@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full max-w-xs m-auto bg-white rounded p-5 my-40 relative">   
+<div class="w-full max-w-xs m-auto bg-white rounded p-5 relative my-10 md:my-40">   
     <span class="absolute right-2 top-0">
         <a title="Home" href="{{route('index')}}">
             <svg class="inline" width="16" height="16" viewBox="0 0 576 512" fill="#606060">
@@ -26,11 +26,11 @@
          @csrf
          
          <label for="email">Email</label>
-         <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
+         <input id="email" type="email" name="email" value="{{ old('email') }}" class="form-input w-full" required autofocus>
       
 
          <label for="password">Password</label>
-         <input id="password" type="password" name="password" required>
+         <input id="password" type="password" name="password" class="form-input w-full" required>
 
   
       

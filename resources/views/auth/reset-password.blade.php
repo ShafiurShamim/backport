@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full max-w-xs m-auto bg-white rounded p-5 my-40">   
+<div class="w-full max-w-xs m-auto bg-white rounded p-5 my-10 md:my-40">   
     
     @if ($errors->any())
     <div>

@@ -11,7 +11,7 @@
 
          <!-- Styles -->
          <link rel="stylesheet" href="{{ asset('css/fontawesome.css') }}">
-         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+         <link rel="stylesheet" href="{{ asset('css/manage.css') }}">
          
          @yield('head')
     </head>
@@ -52,7 +52,7 @@
 
         @include('manage._inc.messages')
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/manage.js') }}"></script>
 
         <script>
             document.addEventListener("DOMContentLoaded", function(){

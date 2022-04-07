@@ -2,7 +2,7 @@
 
 @section('content')
     
-<div class="w-full max-w-xs m-auto bg-white rounded p-5 my-40 relative">   
+<div class="w-full max-w-xs m-auto bg-white rounded p-5 relative my-10 md:my-40">   
     <span class="absolute right-2 top-0">
         <a title="Home" href="{{route('index')}}">
             <svg class="inline" width="16" height="16" viewBox="0 0 576 512" fill="#606060">
@@ -31,19 +31,19 @@
 
         <!-- Name -->
         <label for="name">Name</label>
-        <input id="name" type="text" name="name" value="{{ old('name') }}" required autofocus>
+        <input id="name" type="text" name="name" value="{{ old('name') }}" class="form-input w-full" required autofocus>
 
         <!-- Email Address -->
         <label for="email">Email</label>
-        <input id="email" type="email" name="email" value="{{ old('email') }}" required>
+        <input id="email" type="email" name="email" value="{{ old('email') }}" class="form-input w-full" required>
       
         <!-- Password -->
         <label for="password">Password</label>
-        <input id="password" type="password" name="password" required>
+        <input id="password" type="password" name="password" class="form-input w-full" required>
 
         <!-- Confirm Password -->
         <label for="password_confirmation">Password Confirmation</label>
-        <input id="password_confirmation" type="password" name="password_confirmation" required>
+        <input id="password_confirmation" type="password" name="password_confirmation" class="form-input w-full" required>
 
          
         <a class="block underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">

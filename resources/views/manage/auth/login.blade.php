@@ -1,8 +1,6 @@
 @extends('manage.layouts.guest')
 @section('content')
-    
-<div class="w-full max-w-xs m-auto bg-white rounded p-5 my-40">   
-    
+<div class="w-full max-w-xs m-auto bg-white rounded p-5 my-10 md:my-40">
     @if ($errors->has('email'))
     <span class="font-medium text-red-600">
       <strong>{{ $errors->first('email') }}</strong>
@@ -14,27 +12,17 @@
       </path>
     </svg>
   </div>
-    <!-- form -->
-    <form method="POST" action="{{ route('manage.login') }}">
-         @csrf
-         
-         <label for="email">Email</label>
-         <input id="email" type="email" name="email" value="{{ old('email') }}" required autofocus>
-      
+  <!-- form -->
+  <form method="POST" action="{{ route('manage.login') }}">
+    @csrf
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" value="{{ old('email') }}" class="form-input w-full" required autofocus>
 
-         <label for="password">Password</label>
-         <input id="password" type="password" name="password" required>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" class="form-input w-full" required>
 
-  
-      
-          {{-- <label>
-              <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-          </label> --}}
-        
+    <button type="submit" class="w-full bg-gray-600 text-gray-100 rounded hover:bg-gray-500 px-4 py-2 focus:outline-none my-4 float-right">Log In</button>
     
-         <button type="submit" class="w-full bg-gray-600 text-gray-100 rounded hover:bg-gray-500 px-4 py-2 focus:outline-none my-4 float-right">Log In</button>
-     
-    </form>
-   
+  </form>
 </div>
 @endsection
